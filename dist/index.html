@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>炫酷的数字查找特效</title>
+    <style>
+        body{
+            background-color: rgb(23,47,56)
+        }
+        .container{
+            margin-top:18px;
+            width: 99vw;
+        }
+        .container span{
+            min-width: 2em;
+            margin-right: 10px;
+            color: #ccc;
+            float:left;
+        }
+        .center{
+            font-size: 130px;
+            color: #eee;
+            opacity: 0.7;
+            /* font-weight: bold; */
+            position: absolute;
+            left: 50%;
+            top:50%;
+            transform: translateX(-50%) translateY(-50%);
+        }
+        .piao{
+            transition: all 1s ,opaicty 0.7s 0.3s;
+
+        }
+        /* .piao:hover{
+            transform: translate(100px,100px);
+            opacity: 0;
+        } */
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- <span>1</span>
+        <span>2</span> -->
+    </div>
+    <div class="center sta ">
+        <!-- 13 -->
+    </div>
+    <!-- <div class="center piao">
+        13
+    </div> -->
+
+</body>
+<script src="./main.js"></script>
+<!-- <script>
+    //测试页面重新加载让数字飘起来的效果
+    var div = document.createElement('div');
+    div.innerHTML = 45;
+    div.classList = 'center piao';
+
+    setTimeout(()=>{
+        document.body.appendChild(div);
+        getComputedStyle(div).left;
+        div.style.transform = 'translate(100px,100px)';
+        div.style.opacity = 0;
+    },5000)
+</script> -->
+</html>
